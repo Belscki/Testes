@@ -2,5 +2,7 @@ from django.urls import path
 from .views import home
 
 urlpatterns = [
-    path('',home, name="home-view")
+    path('admin/', admin.site.urls),
+    path('',home, name="home-view"),
+    path('home',home, name="home-view"),
 ]
